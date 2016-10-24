@@ -11,12 +11,12 @@ The purpose of this repo is to aggregate all best practices that we will use in 
  6. [Problems to solve](./problems-to-solve.md)
  
 ###TODO
- * [x]React
- * [ ]React-Router
- * [ ]Redux
- * [ ]Redux-Thunk
- * [ ]React-Redux-Router 
- * [x]Problems to solve
+ * [x] React
+ * [ ] React-Router
+ * [ ] Redux
+ * [ ] Redux-Thunk
+ * [ ] React-Redux-Router 
+ * [x] Problems to solve
  
  
 \* many of practices here are taken from medium and Github articles. All credentials are provided
