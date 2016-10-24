@@ -1,8 +1,9 @@
-#React-Redux stack best practices*
+#React-Redux stack best practices* + standard style
 The purpose of this repo is to aggregate all best practices that we will use in my company. I have got team of 5 junior developers. Mainly it all for them but for sure I will learn something new when writing this "piece of art".
  
 
 ###Table of content
+ 0. [Basics](./basics.md)
  1. [React](./react.md)
  2. React-Router
  3. Redux
