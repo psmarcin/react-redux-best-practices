@@ -11,7 +11,7 @@ The purpose of this repo is to aggregate all best practices that we will use in 
  6. [Problems to solve](./problems-to-solve.md)
  
 ###TODO
- * [x] React
+ * [ ] React
  * [ ] React-Router
  * [ ] Redux
  * [ ] Redux-Thunk
