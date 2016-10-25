@@ -7,8 +7,8 @@ The purpose of this repo is to aggregate all best practices, rules and libraries
  1. [React](./docs/react.md)
  2. React-Router(./docs/react-router.md)
  3. [Redux](./docs/redux.md)
- 4. [Redux-Thunk](./docs/redux-thunk.md)
- 5. [React-Redux-Router](./docs/react-router.md)
+ 4. Redux-Thunk
+ 5. React-Redux-Router
  6. [Problems to solve](./docs/problems-to-solve.md)
  
 ###TODO
