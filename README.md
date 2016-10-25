@@ -6,7 +6,7 @@ The purpose of this repo is to aggregate all best practices that we will use in 
  0. [Basics](./basics.md)
  1. [React](./react.md)
  2. React-Router
- 3. Redux
+ 3. [Redux](./redux.md)
  4. Redux-Thunk
  5. React-Redux-Router 
  6. [Problems to solve](./problems-to-solve.md)
