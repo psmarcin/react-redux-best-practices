@@ -43,7 +43,7 @@ Rule of thumb is that if your render method has more than 10 lines is probably w
 ###Use ShouldComponentUpdate for performance optimization [3]
 React is a templating language that renders EVERY TIME the props or the state of the component changes. So imagine having to render the entire page every time there in an action. That takes a big load on the browser. That’s where ShouldComponentUpdate comes in, whenever React is rendering the view it checks to see if shouldComponentUpdate is returning false/true. So whenever you have a component that’s static do yourself a favor and return false. Or if is not static check to see if the props/state has changed.
 
-###Use Smart and Dumb Components [3]
+###Use Smart and Dumb Components [3] [4]
 There is not much to say here other than you don’t need to have a state in every object. Ideally you will have a smart parent view and all the children are dumb components that just receive props and don’t have any logic in it. You can create a dumb component by doing something like this:
 ```javascript
 const DumbComponent = ({props}) => {
@@ -113,3 +113,4 @@ Next Re
 [1]:https://blog.risingstack.com/react-js-best-practices-for-2016/
 [2]:https://medium.com/@tkssharma/react-redux-best-practices-write-production-apps-7c3639e3c447#.ytgt7dszs
 [3]:https://medium.com/@nesbtesh/react-best-practices-a76fd0fbef21#.nti9m9ig1
+[4]:https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.58gfat29l
