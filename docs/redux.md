@@ -79,11 +79,13 @@ export default handleActions({
 
 ###Use reducers to keep your state in sync [1]
 The interesting thing here is that a reducer can handle any action at all. One neat thing to do is when a user logs out, clear all your stores.
+```javascript
 switch (action.type) {
-   ...
+   // ...
    case USER_LOGOUT: 
      return {}
 }
+````
 
 ###Use ActionCreators to translate application data structures to API data structures [1]
 Your ActionCreators are responsible for converting the data in your application’s format to the format of the API to which you are communicating. This is in both directions — when making the request or handling the response.
