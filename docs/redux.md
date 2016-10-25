@@ -45,7 +45,7 @@ createAction( ‘TODO_ADD’ )
 **Why?** As a convention to clearly identify what type of function it is
 
 ```
-const addTodo = createtion( ‘TODO_ADD’ )
+const addTodo = createAction( ‘TODO_ADD’ )
 ```
 
 ###Selectors [2]
