@@ -36,7 +36,7 @@ TODO_ADD
 
 **Why?** To reduce boilerplate and enforce FSA-compliant actions
 
-```
+```javascript
 createAction( ‘TODO_ADD’ )
 ```
 
@@ -44,7 +44,7 @@ createAction( ‘TODO_ADD’ )
 
 **Why?** As a convention to clearly identify what type of function it is
 
-```
+```javascript
 const addTodo = createAction( ‘TODO_ADD’ )
 ```
 
@@ -53,7 +53,9 @@ const addTodo = createAction( ‘TODO_ADD’ )
 
 **Why?** As a convention to clearly identify what type of function it is
 
-```const getTodo = (state) => state```
+```javascript
+const getTodo = (state) => state
+```
 
 ###Reducers [2]
 **DO** build your reducers using redux-actions’ `handleActions()`
@@ -75,7 +77,7 @@ export default handleActions({
 
 ##Best Practices
 
-###Use reducers to keep your state in sync[1]
+###Use reducers to keep your state in sync [1]
 The interesting thing here is that a reducer can handle any action at all. One neat thing to do is when a user logs out, clear all your stores.
 switch (action.type) {
    ...
@@ -83,7 +85,7 @@ switch (action.type) {
      return {}
 }
 
-###Use ActionCreators to translate application data structures to API data structures.[1]
+###Use ActionCreators to translate application data structures to API data structures [1]
 Your ActionCreators are responsible for converting the data in your application’s format to the format of the API to which you are communicating. This is in both directions — when making the request or handling the response.
 Because the output of an action is handled by a reducer that has no knowledge of how it was called, you might find that sometimes you can’t merely return the result of an API call — you need to enrich it extra data, eg: if your action is PROJECT_UPDATE, and you pass a new project name and the project id, and the API just returns {savedAt: “<some date>”}, then you will need to pass the data from the arguments into the response:
 ```javascript
