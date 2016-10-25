@@ -1,5 +1,5 @@
 # Basics about javascript standard code style
-I prefer to use es2015 syntax and then compile it to old one. Completely dropped `var` instead of `let` and `const`. It's much more meaningful then `var`'s.
+I prefer to use es2015 syntax and then compile it to old one. Completely dropped `var` instead of `let` and `const`. It's much more meaningful then `var`s.
 
 ##Naming convection
 ###File name
