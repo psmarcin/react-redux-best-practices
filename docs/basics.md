@@ -32,6 +32,19 @@ We will use it for all states.
 
 https://github.com/facebook/immutable-js
 
+###Loglevel
+Minimal lightweight logging for JavaScript, adding reliable log level methods to wrap any available console.log methods
+
+https://github.com/pimterry/loglevel
+
+###Griddle
+>Tired of searching for a simple, really customizable and powerful grid system? Look no further.
+http://gridle.org/
+
+###[WIP] React-Redux-Form
+Create forms easily in React with Redux. 
+https://github.com/davidkpiano/react-redux-form
+
 ###Pure functions*
 All of our functions will be pure. It means that function can not change context and it does not modify arguments or context. It should not depends on context. So for good example:
 ```javascript

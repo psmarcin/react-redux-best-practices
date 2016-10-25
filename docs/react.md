@@ -1,6 +1,6 @@
 # React - best practices
 ##[WIP] Rules
-###Use Classes[1]
+###Use Classes [1]
 
 React works well with ES2015 classes.
 
@@ -13,7 +13,7 @@ class HelloMessage extends React.Component {
 ```
 We prefer higher order components over mixins so for us leaving createClass was more like a syntactical question rather than a technical one. We believe there is nothing wrong with using createClass over React.Component and vice-versa.
 
-###PropType[1]
+###PropType [1]
 
 If you still don't check your properties, you should start 2016 with fixing this. It can save hours for you, believe me.
 
@@ -66,11 +66,11 @@ componentDidMount(){
 }
 ```
 
-###Higher order components[1]
+###Higher order components [1]
 
 Now that mixins are dead and not supported in ES6 Class components we should look for a different approach.
 
-#####What is a higher order component?
+#####What is a higher order component? [1]
 
 `PassData({ foo: 'bar' })(MyComponent)`
   
@@ -89,7 +89,7 @@ Basically, you compose a new component from your original one and extend its beh
      >;
    }
 ```
-###Use SmartComponents to ensure that your DumbComponents are ready to render
+###Use SmartComponents to ensure that your DumbComponents are ready to render [2]
    Your SmartComponents should be the components in your Route. In your SmartComponent’s render function have a method that makes sure it has the data it needs:
    ```javascript
    render () {
@@ -107,6 +107,8 @@ Basically, you compose a new component from your original one and extend its beh
    Use SmartComponents to generate actions creators.
    When a DumbComponent has an interaction from a user, **it shouldn’t handle any logic itself** — **it should blindly call a function which is passed to it by a SmartContainer and let it do the work**.
    The SmartContainer should then marshal the necessary data and pass it to an action creator.
+   
+Next Re
 
 [1]:https://blog.risingstack.com/react-js-best-practices-for-2016/
 [2]:https://medium.com/@tkssharma/react-redux-best-practices-write-production-apps-7c3639e3c447#.ytgt7dszs
