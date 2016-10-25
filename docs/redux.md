@@ -23,23 +23,23 @@ https://github.com/acdlite/redux-actions
 
 ##Naming convetion
 ###Actions [2]
-   **DO** name each action (constant) as `<NOUN>-<VERB>` with the present tense
-   
-   **Why?** For namespacing and sorting your reducers
-   
-   ```TODO_ADD```
-   
-   **DO** build your action creators using redux-actions’s `createAction()`
-   
-   **Why?** To reduce boilerplate and enforce FSA-compliant actions
-   
-   ```createAction( ‘TODO_ADD’ )```
-   
-   **DO** name each action creator as `<verb><Noun>`
-   
-   **Why?** As a convention to clearly identify what type of function it is
-   
-   ```const addTodo = createAction( ‘TODO_ADD’ )```
+**DO** name each action (constant) as `<NOUN>-<VERB>` with the present tense
+
+**Why?** For namespacing and sorting your reducers
+
+```TODO_ADD```
+
+**DO** build your action creators using redux-actions’s `createAction()`
+
+**Why?** To reduce boilerplate and enforce FSA-compliant actions
+
+```createAction( ‘TODO_ADD’ )```
+
+**DO** name each action creator as `<verb><Noun>`
+
+**Why?** As a convention to clearly identify what type of function it is
+
+```const addTodo = createtion( ‘TODO_ADD’ )```
 ###Selectors [2]
 **DO** name each selector as get<Noun>
 
