@@ -3,13 +3,13 @@ The purpose of this repo is to aggregate all best practices that we will use in 
  
 
 ###Table of content
- 0. [Basics](./basics.md)
- 1. [React](./react.md)
+ 0. [Basics](./docs/basics.md)
+ 1. [React](./docs/react.md)
  2. React-Router
- 3. [Redux](./redux.md)
+ 3. [Redux](./docs/redux.md)
  4. Redux-Thunk
  5. React-Redux-Router 
- 6. [Problems to solve](./problems-to-solve.md)
+ 6. [Problems to solve](./docs/problems-to-solve.md)
  
 ###TODO
  * [ ] React

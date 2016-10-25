@@ -15,6 +15,46 @@ I prefer to use es2015 syntax and then compile it to old one. Completely dropped
 * store `store-config.<env>.js`
 
 
+##Libraries
+###Normalizr
+It's god for store model and to be sure that we have right data with right structure.
+>Normalizes deeply nested JSON API responses according to a schema for Flux and Redux apps.
+ Kudos to Jing Chen for suggesting this approach.
+
+We will use it for **every** single response from server. 
+
+https://github.com/paularmstrong/normalizr
+ 
+###Immutable.js
+>Immutable data cannot be changed once created, leading to much simpler application development, no defensive copying, and enabling advanced memoization and change detection techniques with simple logic. Persistent data presents a mutative API which does not update the data in-place, but instead always yields new updated data.
+
+We will use it for all states. 
+
+https://github.com/facebook/immutable-js
+
+###Pure functions*
+All of our functions will be pure. It means that function can not change context and it does not modify arguments or context. It should not depends on context. So for good example:
+```javascript
+function sum(a,b){
+  return a + b
+}
+sum(2,3) // 5
+sum(2,3) // 5
+sum(2,3) // 5
+```
+And now bad example: 
+```javascript
+let x = 2
+function sum(b){
+  x += b
+  return x
+}
+sum(3) // 5
+sum(3) // 8
+sum(3) // 11
+
+```
+> * - I know it's not a library :) 
 
 ##Tools
 ###Code style 

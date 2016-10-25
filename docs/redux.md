@@ -6,7 +6,7 @@
 Naming things is hard. But so is managing state, and Redux takes the pain out of that so can we name things simply as well?
 
 Actions: 
->Name them them \<noun>-\<verb>, eg Project-Create, User-Login. The rationale behind this is that you want them grouped together by the object type, rather than the action type.
+>Name them \<noun>-\<verb>, eg project-create, user-login. The rationale behind this is that you want them grouped together by the object type, rather than the action type.
 
 Reducers: 
 >Name them \<noun>.
