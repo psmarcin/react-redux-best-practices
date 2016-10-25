@@ -1,5 +1,21 @@
 # Basics about javascript standard code style
-I prefer to use es2015 syntax and then compile it to old one. Completly dropped `var` instead of `let` and `const`. It's much more meaningful then `var`'s.
+I prefer to use es2015 syntax and then compile it to old one. Completely dropped `var` instead of `let` and `const`. It's much more meaningful then `var`'s.
+
+##Naming convection
+###File name
+* action `name-spearated-by-dash.action.js`
+* components `UpperCamelCase.js` - each component in separate directory with styles and tests files
+* config `config.<env>.js`
+* constants `name-spearated-by-dash.constants-actions.js`
+* container `name-spearated-by-dash.container.js`
+* container `name-spearated-by-dash.container.js`
+* logic `<noun>-<verb>.js`
+* reducers 
+    * initial state `name-spearated-by-dash.initial-state.js`
+    * reducer `name-spearated-by-dash.reducer.js`
+* store `store-config.<env>.js`
+
+
 
 ##Tools
 ###Code style 
