@@ -87,7 +87,14 @@ switch (action.type) {
 
 ###Use ActionCreators to translate application data structures to API data structures [1]
 Your ActionCreators are responsible for converting the data in your application’s format to the format of the API to which you are communicating. This is in both directions — when making the request or handling the response.
-Because the output of an action is handled by a reducer that has no knowledge of how it was called, you might find that sometimes you can’t merely return the result of an API call — you need to enrich it extra data, eg: if your action is PROJECT_UPDATE, and you pass a new project name and the project id, and the API just returns {savedAt: “<some date>”}, then you will need to pass the data from the arguments into the response:
+
+Because the output of an action is handled by a reducer that has no knowledge of how it was called, you might find that sometimes you can’t merely return the result of an API call — you need to enrich it extra data, eg: if your action is `PROJECT_UPDATE`, and you pass a new project name and the project id, and the API just returns 
+```javascript
+{
+  savedAt: "<some date>"
+}
+```
+, then you will need to pass the data from the arguments into the response:
 ```javascript
 function updateProject(projectId, projectName) {
   request.put(`/project/${projectId}`, {projectName}).then(
