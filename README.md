@@ -10,6 +10,7 @@ The purpose of this repo is to aggregate all best practices, rules and libraries
  4. Redux-Thunk
  5. React-Redux-Router
  6. [Problems to solve](./docs/problems-to-solve.md)
+ 7. Styling guidelines
  
 ###TODO
  * [ ] [WIP] React
